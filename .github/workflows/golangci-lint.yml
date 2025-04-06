@@ -25,8 +25,8 @@ jobs:
           go-version: ${{ matrix.golang }}
       - uses: actions/checkout@v4
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v7
         with:
-          version: v1.61
+          version: v2.0
           args: --timeout=10m
           skip-go-installation: true
